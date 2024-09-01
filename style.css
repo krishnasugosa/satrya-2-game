@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=New+Amsterdam&family=Noto+Serif+Balinese&family=Press+Start+2P&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper-game{
+    background-image: url('galaxy.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 4px solid transparent;
+    width: clamp(300px,50vw,500px);
+    height: 300px;
+    overflow: hidden;
+}
+
+#karakter{
+    background-image: url('pingky-removebg-preview.png');
+    background-size: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid pink;
+    box-shadow: 0px 0px 10px pink;
+    border-radius: 60px;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 38%;
+    left: 1%;
+}
+
+#musuh{
+    background-image: url('satrya1.png');
+    background-size: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid red;
+    box-shadow: 0px 0px 50px red;
+    border-radius: 60px;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: -10%;
+    left: 100%;
+}
+
+.position-btn{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#jumpbtn{
+    font-family: 'Press Start 2P','system ui';
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    outline: transparent;
+    border: transparent;
+    transition: 1s ease;
+}
+
+#jumpbtn:hover{
+    box-shadow: 0px 0px 20px aqua;
+}
+
+#alert{
+    visibility: hidden;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    inset: 0;
+    font-family: 'Press Start 2P';
+}
+
+#alert h1{
+    color: white;
+    font-size: clamp(8px,2vw,30px);
+}
+
+#closebtn{
+    margin-top: 50px;
+    font-family: 'Press Start 2P','system ui';
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    outline: transparent;
+    border: transparent;
+    transition: 1s ease;
+}
+
+#closebtn:hover{
+    box-shadow: 0px 0px 20px aqua;
+}
+
+#score{
+    color: white;
+    font-family: 'Press Start 2P';
+}
+
+#Result{
+    color: white;
+    margin-top: 20px;
+    font-family: 'Press Start 2P';
+}
+
+@media screen and (max-width:304px){
+    .wrapper-game{
+        width: 200px;
+    }
+}
